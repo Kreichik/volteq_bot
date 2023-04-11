@@ -209,8 +209,8 @@ def cert_two(message):
     global event_name
     event_name = message.text
     tink = Image.open('template.png')
-    font = ImageFont.truetype('Fonts/Exo-Bold.otf', 67)
-    font_id = ImageFont.truetype('Fonts/Exo-Medium.otf', 60)
+    font = ImageFont.truetype('Exo-Bold.otf', 67)
+    font_id = ImageFont.truetype('Exo-Medium.otf', 60)
     d = ImageDraw.Draw(tink)
     d.text((750, 620), name_name, font=font, fill=(0, 0, 0, 255))
     d.text((700, 870), event_name, font=font_id, fill=(0, 0, 0, 255))
